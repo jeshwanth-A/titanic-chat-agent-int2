@@ -12,11 +12,10 @@ A production-ready chatbot project that answers questions about Titanic passenge
 ## Project structure
 
 ```text
-Int2/
-  backend/
-  frontend/
-  data/
-  requirements.txt
+backend/
+frontend/
+data/
+requirements.txt
 ```
 
 ## 1) Local setup
@@ -27,12 +26,6 @@ Int2/
 
 ```bash
 pip install -r requirements.txt
-```
-
-`.env`
-
-```env
-GROQ_API_KEY=your_actual_groq_api_key
 ```
 
 ## 2) Run locally
@@ -59,7 +52,7 @@ BACKEND_URL=http://localhost:8000
 
 Create a new Web Service from this repo and configure:
 
-- Root directory: `Int2`
+- Root directory: (leave empty)
 - Build command: `pip install -r requirements.txt`
 - Start command: `uvicorn backend.main:app --host 0.0.0.0 --port $PORT`
 
@@ -75,7 +68,8 @@ After deploy, copy the Render URL, for example:
 
 Create app from GitHub repo with:
 
-- Main file path: `Int2/frontend/app.py`
+- Main file path: `frontend/app.py`
+
 
 In Streamlit app settings -> Secrets, add:
 
