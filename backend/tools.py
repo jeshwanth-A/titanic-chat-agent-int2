@@ -94,9 +94,9 @@ def create_chart(
     chart_type: str,
     column: str,
     title: str,
-    hue: str = None,  # type: ignore
-    xlabel: str = None,  # type: ignore
-    ylabel: str = None,  # type: ignore
+    hue: Optional[str] = None,
+    xlabel: Optional[str] = None,
+    ylabel: Optional[str] = None,
 ) -> str:
     """Create a visualization of the Titanic dataset and return it as a base64 PNG.
 
